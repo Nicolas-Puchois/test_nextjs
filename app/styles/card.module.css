@@ -1,0 +1,38 @@
+.main {
+  border: 1px solid black;
+}
+.card1 {
+  background-color: #e0fbfc;
+
+  border: 1px solid black;
+}
+.card2 {
+  background-color: #98c1d9;
+
+  border: 1px solid black;
+}
+.card3 {
+  background-color: #ee6c4d;
+
+  border: 1px solid black;
+}
+.card4 {
+  background-color: #3d5a80;
+
+  border: 1px solid black;
+}
+.card5 {
+  background-color: #042d3e;
+
+  border: 1px solid black;
+}
+.Darkcard1 {
+  background-color: #e0fbfc;
+
+  border: 1px solid black;
+}
+.Darkcard2 {
+  background-color: #98c1d9;
+
+  border: 1px solid black;
+}

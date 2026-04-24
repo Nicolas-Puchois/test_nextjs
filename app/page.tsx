@@ -60,6 +60,7 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <a href="card">liens vers les card</a>
       </main>
     </div>
   );
