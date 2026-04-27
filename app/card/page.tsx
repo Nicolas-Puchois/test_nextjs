@@ -5,24 +5,46 @@ import styles from "../styles/card.module.css";
 
 export default function Card(){
     const colors = [
-        {className: 'card1', name: 'Fond clair', hex:'#e0fbfc'},
-        {className: 'card2', name: 'liens foncé', hex:'#98c1d9'},
-        {className: 'card3', name: 'bouton ', hex:'#ee6c4d'},
-        {className: 'card4', name: 'liens clair', hex:'#3d5a80'},
-        {className: 'card5', name: 'Fond foncé', hex:'#042d3e'},
+        {   
+            theme:"Light",
+            name: 'Fond',
+            className: 'card1'
+        },
+        {   
+
+            name: 'texte',
+            className: 'card2'
+        },        
+        {   
+
+            name: 'lien',
+            className: 'card3'
+        },        
+        {   
+
+            name: 'bouton',
+            className: 'card4'
+        },        
+        {   
+
+            name: 'lien hover',
+            className: 'card5'
+        },
     ];
+
     const [isDark,setDark] = useState("Light");
+    const theme = isDark.toLowerCase(); // "Light" → "light"
 
     function handleClick(){
-        setDark(isDark === "Light"? "Dark" : "Light");
+        return    setDark(isDark === "light"? "dark" : "light");
     }
     return (
     <main>
     
-        <div className={styles.main}>
+        <div className={`${styles.main} ${styles[theme]}`}>
             {colors.map((color , index)=>(
             <div key={index} className={styles[color.className]}>
-                {color.name} {color.hex}
+                {color.name} 
             </div>
             ))}
         

@@ -1,38 +1,34 @@
+.main.light {
+  --color1: #e0fbfc; /*fond clair*/
+  --color2: #3d5a80; /*lien clair*/
+  --color3: #ee6c4d; /*bouton*/
+  --color4: #293241; /*lien hover*/
+  --color5: #042d3e; /* texte clair*/
+}
+
+.main.dark {
+  --color1: #042d3e; /* fond sombre */
+  --color2: #98c1d9; /*lien sombre*/
+  --color3: #ee6c4d; /*bouton*/
+  --color4: #293241; /*lien  hover*/
+  --color5: #e0fbfc; /* texte sombre*/
+}
+
 .main {
   border: 1px solid black;
 }
 .card1 {
-  background-color: #e0fbfc;
-
-  border: 1px solid black;
+  background-color: var(--color1);
 }
 .card2 {
-  background-color: #98c1d9;
-
-  border: 1px solid black;
+  background-color: var(--color2);
 }
 .card3 {
-  background-color: #ee6c4d;
-
-  border: 1px solid black;
+  background-color: var(--color3);
 }
 .card4 {
-  background-color: #3d5a80;
-
-  border: 1px solid black;
+  background-color: var(--color4);
 }
 .card5 {
-  background-color: #042d3e;
-
-  border: 1px solid black;
-}
-.Darkcard1 {
-  background-color: #e0fbfc;
-
-  border: 1px solid black;
-}
-.Darkcard2 {
-  background-color: #98c1d9;
-
-  border: 1px solid black;
+  background-color: var(--color5);
 }
